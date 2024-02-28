@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Multiplicação e Divisão</title>
+</head>
+
+<body>
+
+    <h2>Calculadora de Multiplicação e Divisão</h2>
+    <form id="calculatorForm"> <label for="primeiroNumero">1º Número:</label> <input type="number" id="primeiroNumero"
+            name="primeiroNumero" required> <br><br> <label for="segundoNumero">2º Número:</label> <input type="number"
+            id="segundoNumero" name="segundoNumero" required><br><br> <button type="button"
+            id="multiplyButton">Multiplicar</button> <button type="button" id="divideButton">Dividir</button> </form>
+
+    <div id="result"></div>
+
+    <script> 
+    document.getElementById("multiplyButton").addEventListener("click", function () { 
+    let primeiroNumero = parseFloat(document.getElementById("primeiroNumero").value);
+    let segundoNumero = parseFloat(document.getElementById("segundoNumero").value); 
+    let multiply = primeiroNumero * segundoNumero; document.getElementById("result").innerHTML = "<p>Multiplicação: " + multiply + "</p>"; }); 
+    
+    document.getElementById("divideButton").addEventListener("click", function () { let primeiroNumero = parseFloat(document.getElementById("primeiroNumero").value); 
+    let segundoNumero = parseFloat(document.getElementById("segundoNumero").value); 
+    let divide = primeiroNumero / segundoNumero; document.getElementById("result").innerHTML = "<p>Divisão: " + divide + "</p>"; }); 
+    </script>
+
+</body>
+
+</html>

@@ -1,2 +1,4 @@
-# Cotil-JavaScript
-Cotil - Tópicos em tecnologia da Informação
+# Cotil
+
+Tópicos em tecnologia da Informação - JavaScript
+Desenvolvimento Aplicação WEB II - PHP
